@@ -10,9 +10,9 @@
 
 가져갈거 :
 	- 매니저 - GameManaer, AudioManager, DataManager 
-	- 캔버스 - TopBar, CoinShopPanel(미완), SettingsPanel(미완), GameOverPanel
+	- 캔버스 - TopBar, CoinShopPane, SettingsPanel, GameOverPanel
 		> GameOverPanel은 틀만 있어서 text 세팅 같은건 직접 해야 함.
-			 FSManager나 STHManager에서 '게임 오버' 검색해서 참고하심 됨(안하셔도 됨)
+			 FSManager나 STHManager에서 '게임 오버' 검색해서 참고(안하셔도 됨)
 
 해야할거 : 
 	- 각 게임 스크립트 아무거나 Start()에 
@@ -24,7 +24,6 @@
         GameObject playerPrefab = Resources.Load<GameObject>("Prefabs/Characters/" + GameManager.instance.curCharacter.name);
         GameObject player = Instantiate(playerPrefab, new Vector3(0, 0, 0), Unity.Mathematics.quaternion.identity);
         
-	이렇게
 
 
 -
